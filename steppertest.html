@@ -1,0 +1,52 @@
+<html>
+    <style>
+        .stepper {
+  display: flex;
+  align-items: center;
+}
+
+.stepper-row {
+  display: flex;
+  align-items: center;
+}
+
+.stepper-button {
+  padding: 5px 10px;
+  font-size: 16px;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.stepper-input {
+  width: 50px;
+  text-align: center;
+  margin: 0 10px;
+}
+
+/* Media queries untuk mengubah tata letak stepper saat tampilan pada perangkat seluler */
+@media screen and (max-width: 600px) {
+  .stepper,
+  .stepper-row {
+    flex-direction: column;
+  }
+
+  .stepper-row {
+    margin-bottom: 10px; /* Tambahkan ruang antara baris pada tampilan vertikal */
+  }
+
+  .stepper-input {
+    width: auto;
+    margin: 5px 0; /* Sesuaikan jarak margin untuk tampilan vertikal */
+  }
+}
+
+    </style>
+    <div class="stepper">
+        <div class="stepper-row">
+          <button class="stepper-button">-</button>
+          <input type="text" class="stepper-input" value="1">
+          <button class="stepper-button">+</button>
+        </div>
+      </div>      
+</html>
